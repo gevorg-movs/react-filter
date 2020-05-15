@@ -2,8 +2,8 @@ import React from 'react';
 
 function Table(props) {
   const a = <span className="text-primary">{props.sortType === 'asc' ? 
-  <i class="fa fa-arrow-down" aria-hidden="true"></i>
- : <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  <i className="fa fa-arrow-down" aria-hidden="true"></i>
+ : <i className="fa fa-arrow-up" aria-hidden="true"></i>
 }</span>
   return (
    <table className="table">

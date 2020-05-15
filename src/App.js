@@ -11,14 +11,14 @@ class App extends React.Component {
   state = {
     data: [],
     isLoading: true,
-    sortField: '',
+    sortField: 'id',
     sortType: 'asc',
     row: null,
     searchValue: null
   }
 
   async componentDidMount() {
-    const respone = await fetch('https://jsonplaceholder.typicode.com/users');
+    const respone = await fetch('/users.php');
     const data = await respone.json()
     this.setState({
       data,
