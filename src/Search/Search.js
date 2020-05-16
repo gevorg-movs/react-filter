@@ -9,6 +9,7 @@ class Search extends React.Component {
    render() {
       return (      
          <div>
+            <h1 className="text-primary text-center mt-3 mb-3">React filter Application</h1>
                <div className="input-group mb-3 mt-3">         
             <input type="text" className="form-control font-weight-bold" placeholder="Search" aria-label="" aria-describedby="basic-addon1" 
             onChange={this.onChangeInput}/>
